@@ -1,0 +1,392 @@
+#sec1{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    #toggle{
+        display: none;
+        width: 100%;
+        height: 750px;
+        background-color: black;
+        position: absolute;
+        top: -100px;
+        z-index: 2;
+        
+        .header{
+            width: 100%;
+            height: 100px;
+            display: flex;
+            justify-content: space-between;
+
+            .logo{
+                width: 30%;
+                height: 100px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .x-button{
+                width: 30%;
+                height: 100px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                button{
+                    width: 20%;
+                    height: 50px;
+                    background-color: black;
+                    color: white;
+                }
+            }
+        }
+
+
+        .main-box{
+            width: 100%;
+            height: 650px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .hero-box{
+                width: 60%;
+                height: 400px;
+                display: flex;
+                animation: anime 1s;
+
+
+                @keyframes anime {
+                    from{
+                        transform: rotateX(180deg);
+                    }
+                    to{
+                        transform: rotateX(0deg);
+                    }
+                }
+
+
+                .nav{
+                    width: 60%;
+                    height: 400px;
+
+                    .line1{
+                        width: 100%;
+                        height: 133px;
+                        display: flex;
+                        align-items: center;
+
+                        .one{
+                            margin-left: 20px;
+                            color: white;
+                            font-size: 50px;
+                            cursor: pointer;
+                            &:hover{
+                                color: red;
+                                transition: all 1s;
+                            }
+                        }
+
+                        .two{
+                            margin-left: 150px;
+                            color: white;
+                            font-size: 50px;
+                            cursor: pointer;
+                            &:hover{
+                                color: red;
+                                transition: all 1s;
+                            }
+                        }
+                    }
+
+
+                    .line2{
+                        width: 100%;
+                        height: 133px;
+                        display: flex;
+                        align-items: center;
+
+                        .three{
+                            margin-left: 20px;
+                            color: white;
+                            font-size: 50px;
+                            cursor: pointer;
+                            &:hover{
+                                color: red;
+                                transition: all 1s;
+                            }
+                        }
+
+                        .four{
+                            margin-left: 110px;
+                            color: white;
+                            font-size: 50px;
+                            cursor: pointer;
+                            &:hover{
+                                color: red;
+                                transition: all 1s;
+                            }
+                        }
+                    }
+
+
+                    .line3{
+                        width: 100%;
+                        height: 133px;
+                        display: flex;
+                        align-items: center;
+
+                        .five{
+                            margin-left: 20px;
+                            color: white;
+                            font-size: 50px;
+                            cursor: pointer;
+                            &:hover{
+                                color: red;
+                                transition: all 1s;
+                            }
+                        }
+
+                        .six{
+                            margin-left: 100px;
+                            color: white;
+                            font-size: 50px;
+                            cursor: pointer;
+                            &:hover{
+                                color: red;
+                                transition: all 1s;
+                            }
+                        }
+                    }
+                }
+
+
+                .contact{
+                    width: 40%;
+                    height: 400px;
+
+                    .name{
+                        width: 100%;
+                        height: 100px;
+
+                        p{
+                            color: red;
+                            font-size: 25px;
+                            font-weight: 600;
+                            letter-spacing: 5px;
+                        }
+                    }
+
+
+                    .adress{
+                        width: 100%;
+                        height: 200px;
+
+                        a{
+                            text-decoration: none;
+                            color: white;
+                            &:hover{
+                                color: red;
+                                transition: all 1s;
+                            }
+                        }
+
+                        p{
+                            color: #6f6f6f;
+                            font-size: 20px;
+                            font-weight: 600;
+                        }
+                    }
+
+                    .line{
+                        width: 100%;
+                        height: 5px;
+
+                        .color-line{
+                            width: 50%;
+                            height: 5px;
+                            background-color: red;
+                        }
+                    }
+
+
+                    .social-links{
+                        width: 100%;
+                        height: 95px;
+                        display: flex;
+                        align-items: center;
+
+                        .fa-facebook-f{
+                            color: white;
+                            font-size: 20px;
+                            margin-left: 10px;
+                            cursor: pointer;
+                            &:hover{
+                                color: blue;
+                            }
+                        }
+
+                        .fa-twitter{
+                            color: white;
+                            font-size: 20px;
+                            margin-left: 25px;
+                            cursor: pointer;
+                            &:hover{
+                                color: skyblue;
+                            }
+                        }
+
+                        .fa-google-plus-g{
+                            color: white;
+                            font-size: 20px;
+                            margin-left: 25px;
+                            cursor: pointer;
+                            &:hover{
+                                color: red;
+                            }
+                        }
+
+                        .fa-dribbble{
+                            color: white;
+                            font-size: 20px;
+                            margin-left: 25px;
+                            cursor: pointer;
+                            &:hover{
+                                color: palevioletred;
+                            }
+                        }
+
+                        .fa-linkedin-in{
+                            color: white;
+                            font-size: 20px;
+                            margin-left: 25px;
+                            cursor: pointer;
+                            &:hover{
+                                color: #ff214f;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+
+
+
+
+
+
+
+    .main-box{
+        width: 80%;
+        height: 500px;
+        display: flex;
+
+        .photo{
+            width: 30%;
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img{
+                position: absolute;
+                animation: hereket1 1s;
+            }
+        }
+
+        @keyframes hereket1{
+            from{
+                left: -300px;
+            }
+            to{
+                left: 240px;
+            }
+        }
+
+        .text{
+            width: 70%;
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .about{
+                width: 100%;
+                height: 250px;
+
+                .name{
+                    width: 100%;
+                    height: 120px;
+                    
+                    p{
+                        font-size: 90px; 
+                        letter-spacing: 5px;
+                        position: absolute;
+                        animation: hereket2 1s;                
+
+                        span{
+                            font-weight: 700;
+                            margin-left: 50px;
+                        }
+                    }
+                }
+
+                @keyframes hereket2{
+                    from{
+                        right: -300px;
+                    }
+                    to{
+                        right: 250px;
+                    }
+                }
+
+
+                .line-box{
+                    width: 100%;
+                    height: 5px;
+
+                    .color-line{
+                        width: 63%;
+                        height: 5px;
+                        background-color: #FF214F;
+                        margin-left: 205px;
+                    }
+                }
+
+                .status{
+                    width: 100%;
+                    height: 125px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    p{
+                        color: #939393;
+                        font-size: 15px;
+                        line-height: 20px;
+                        font-weight: 500;
+                        letter-spacing: 5px;
+                        position: absolute;
+                        animation: hereket4 1s;
+                    }
+
+                    @keyframes hereket4{
+                        from{
+                            right: -300px;
+                        }
+                        to{
+                            right: 350px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

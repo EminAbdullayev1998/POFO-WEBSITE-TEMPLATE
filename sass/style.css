@@ -1,0 +1,775 @@
+html {
+  overflow-x: hidden;
+}
+
+body {
+  background-color: white;
+  color: black;
+}
+
+::-webkit-scrollbar-track {
+  border: 5px solid white;
+  background-color: #b2bec3;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+  background-color: #dfe6e9;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #74b9ff;
+  border-radius: 10px;
+  background: url("/img/scrollbar-bg.jpg");
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  display: flex;
+}
+header .social-links {
+  width: 30%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+header .social-links a {
+  text-decoration: none;
+  color: black;
+}
+header .social-links a:hover {
+  color: rgb(132, 112, 112);
+}
+header .social-links .fa-facebook-f {
+  font-size: 20px;
+  margin-left: 100px;
+}
+header .social-links .fa-twitter {
+  font-size: 20px;
+  margin-left: 20px;
+}
+header .social-links .fa-dribbble {
+  font-size: 20px;
+  margin-left: 20px;
+}
+header .logo {
+  width: 40%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .button-menu {
+  width: 30%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+header .button-menu .menuBtn {
+  width: 15%;
+  height: 35px;
+  margin-right: 50px;
+  background-color: white;
+  color: black;
+}
+header .button-menu #mode {
+  width: 15%;
+  height: 35px;
+  background-color: white;
+  color: black;
+}
+header .button-menu #lang {
+  width: 15%;
+  height: 35px;
+  background-color: white;
+  color: black;
+}
+
+.light {
+  background-color: white;
+}
+
+.dark {
+  background-color: black;
+}
+.dark .fa-brands {
+  color: white;
+}
+.dark p {
+  color: white;
+}
+
+#sec1 {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+#sec1 #toggle {
+  display: none;
+  width: 100%;
+  height: 750px;
+  background-color: black;
+  position: absolute;
+  top: -100px;
+  z-index: 2;
+}
+#sec1 #toggle .header {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+#sec1 #toggle .header .logo {
+  width: 30%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#sec1 #toggle .header .x-button {
+  width: 30%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#sec1 #toggle .header .x-button button {
+  width: 20%;
+  height: 50px;
+  background-color: black;
+  color: white;
+}
+#sec1 #toggle .main-box {
+  width: 100%;
+  height: 650px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#sec1 #toggle .main-box .hero-box {
+  width: 60%;
+  height: 400px;
+  display: flex;
+  -webkit-animation: anime 1s;
+          animation: anime 1s;
+}
+@-webkit-keyframes anime {
+  from {
+    transform: rotateX(180deg);
+  }
+  to {
+    transform: rotateX(0deg);
+  }
+}
+@keyframes anime {
+  from {
+    transform: rotateX(180deg);
+  }
+  to {
+    transform: rotateX(0deg);
+  }
+}
+#sec1 #toggle .main-box .hero-box .nav {
+  width: 60%;
+  height: 400px;
+}
+#sec1 #toggle .main-box .hero-box .nav .line1 {
+  width: 100%;
+  height: 133px;
+  display: flex;
+  align-items: center;
+}
+#sec1 #toggle .main-box .hero-box .nav .line1 .one {
+  margin-left: 20px;
+  color: white;
+  font-size: 50px;
+  cursor: pointer;
+}
+#sec1 #toggle .main-box .hero-box .nav .line1 .one:hover {
+  color: red;
+  transition: all 1s;
+}
+#sec1 #toggle .main-box .hero-box .nav .line1 .two {
+  margin-left: 150px;
+  color: white;
+  font-size: 50px;
+  cursor: pointer;
+}
+#sec1 #toggle .main-box .hero-box .nav .line1 .two:hover {
+  color: red;
+  transition: all 1s;
+}
+#sec1 #toggle .main-box .hero-box .nav .line2 {
+  width: 100%;
+  height: 133px;
+  display: flex;
+  align-items: center;
+}
+#sec1 #toggle .main-box .hero-box .nav .line2 .three {
+  margin-left: 20px;
+  color: white;
+  font-size: 50px;
+  cursor: pointer;
+}
+#sec1 #toggle .main-box .hero-box .nav .line2 .three:hover {
+  color: red;
+  transition: all 1s;
+}
+#sec1 #toggle .main-box .hero-box .nav .line2 .four {
+  margin-left: 110px;
+  color: white;
+  font-size: 50px;
+  cursor: pointer;
+}
+#sec1 #toggle .main-box .hero-box .nav .line2 .four:hover {
+  color: red;
+  transition: all 1s;
+}
+#sec1 #toggle .main-box .hero-box .nav .line3 {
+  width: 100%;
+  height: 133px;
+  display: flex;
+  align-items: center;
+}
+#sec1 #toggle .main-box .hero-box .nav .line3 .five {
+  margin-left: 20px;
+  color: white;
+  font-size: 50px;
+  cursor: pointer;
+}
+#sec1 #toggle .main-box .hero-box .nav .line3 .five:hover {
+  color: red;
+  transition: all 1s;
+}
+#sec1 #toggle .main-box .hero-box .nav .line3 .six {
+  margin-left: 100px;
+  color: white;
+  font-size: 50px;
+  cursor: pointer;
+}
+#sec1 #toggle .main-box .hero-box .nav .line3 .six:hover {
+  color: red;
+  transition: all 1s;
+}
+#sec1 #toggle .main-box .hero-box .contact {
+  width: 40%;
+  height: 400px;
+}
+#sec1 #toggle .main-box .hero-box .contact .name {
+  width: 100%;
+  height: 100px;
+}
+#sec1 #toggle .main-box .hero-box .contact .name p {
+  color: red;
+  font-size: 25px;
+  font-weight: 600;
+  letter-spacing: 5px;
+}
+#sec1 #toggle .main-box .hero-box .contact .adress {
+  width: 100%;
+  height: 200px;
+}
+#sec1 #toggle .main-box .hero-box .contact .adress a {
+  text-decoration: none;
+  color: white;
+}
+#sec1 #toggle .main-box .hero-box .contact .adress a:hover {
+  color: red;
+  transition: all 1s;
+}
+#sec1 #toggle .main-box .hero-box .contact .adress p {
+  color: #6f6f6f;
+  font-size: 20px;
+  font-weight: 600;
+}
+#sec1 #toggle .main-box .hero-box .contact .line {
+  width: 100%;
+  height: 5px;
+}
+#sec1 #toggle .main-box .hero-box .contact .line .color-line {
+  width: 50%;
+  height: 5px;
+  background-color: red;
+}
+#sec1 #toggle .main-box .hero-box .contact .social-links {
+  width: 100%;
+  height: 95px;
+  display: flex;
+  align-items: center;
+}
+#sec1 #toggle .main-box .hero-box .contact .social-links .fa-facebook-f {
+  color: white;
+  font-size: 20px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+#sec1 #toggle .main-box .hero-box .contact .social-links .fa-facebook-f:hover {
+  color: blue;
+}
+#sec1 #toggle .main-box .hero-box .contact .social-links .fa-twitter {
+  color: white;
+  font-size: 20px;
+  margin-left: 25px;
+  cursor: pointer;
+}
+#sec1 #toggle .main-box .hero-box .contact .social-links .fa-twitter:hover {
+  color: skyblue;
+}
+#sec1 #toggle .main-box .hero-box .contact .social-links .fa-google-plus-g {
+  color: white;
+  font-size: 20px;
+  margin-left: 25px;
+  cursor: pointer;
+}
+#sec1 #toggle .main-box .hero-box .contact .social-links .fa-google-plus-g:hover {
+  color: red;
+}
+#sec1 #toggle .main-box .hero-box .contact .social-links .fa-dribbble {
+  color: white;
+  font-size: 20px;
+  margin-left: 25px;
+  cursor: pointer;
+}
+#sec1 #toggle .main-box .hero-box .contact .social-links .fa-dribbble:hover {
+  color: palevioletred;
+}
+#sec1 #toggle .main-box .hero-box .contact .social-links .fa-linkedin-in {
+  color: white;
+  font-size: 20px;
+  margin-left: 25px;
+  cursor: pointer;
+}
+#sec1 #toggle .main-box .hero-box .contact .social-links .fa-linkedin-in:hover {
+  color: #ff214f;
+}
+#sec1 .main-box {
+  width: 80%;
+  height: 500px;
+  display: flex;
+}
+#sec1 .main-box .photo {
+  width: 30%;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#sec1 .main-box .photo img {
+  position: absolute;
+  -webkit-animation: hereket1 1s;
+          animation: hereket1 1s;
+}
+@-webkit-keyframes hereket1 {
+  from {
+    left: -300px;
+  }
+  to {
+    left: 240px;
+  }
+}
+@keyframes hereket1 {
+  from {
+    left: -300px;
+  }
+  to {
+    left: 240px;
+  }
+}
+#sec1 .main-box .text {
+  width: 70%;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#sec1 .main-box .text .about {
+  width: 100%;
+  height: 250px;
+}
+#sec1 .main-box .text .about .name {
+  width: 100%;
+  height: 120px;
+}
+#sec1 .main-box .text .about .name p {
+  font-size: 90px;
+  letter-spacing: 5px;
+  position: absolute;
+  -webkit-animation: hereket2 1s;
+          animation: hereket2 1s;
+}
+#sec1 .main-box .text .about .name p span {
+  font-weight: 700;
+  margin-left: 50px;
+}
+@-webkit-keyframes hereket2 {
+  from {
+    right: -300px;
+  }
+  to {
+    right: 250px;
+  }
+}
+@keyframes hereket2 {
+  from {
+    right: -300px;
+  }
+  to {
+    right: 250px;
+  }
+}
+#sec1 .main-box .text .about .line-box {
+  width: 100%;
+  height: 5px;
+}
+#sec1 .main-box .text .about .line-box .color-line {
+  width: 63%;
+  height: 5px;
+  background-color: #FF214F;
+  margin-left: 205px;
+}
+#sec1 .main-box .text .about .status {
+  width: 100%;
+  height: 125px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#sec1 .main-box .text .about .status p {
+  color: #939393;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 500;
+  letter-spacing: 5px;
+  position: absolute;
+  -webkit-animation: hereket4 1s;
+          animation: hereket4 1s;
+}
+@-webkit-keyframes hereket4 {
+  from {
+    right: -300px;
+  }
+  to {
+    right: 350px;
+  }
+}
+@keyframes hereket4 {
+  from {
+    right: -300px;
+  }
+  to {
+    right: 350px;
+  }
+}
+
+#sec2 {
+  width: 100%;
+  height: 2500px;
+}
+#sec2 .options {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#sec2 .options .selection-box {
+  width: 50%;
+  height: 50px;
+}
+#sec2 .options .selection-box ol {
+  display: flex;
+  justify-content: space-around;
+}
+#sec2 .options .selection-box ol li {
+  list-style: none;
+}
+#sec2 .options .selection-box ol li a {
+  text-decoration: none;
+  color: black;
+}
+#sec2 .options .selection-box ol li a:hover {
+  border-bottom: 1px solid black;
+}
+#sec2 .photo-boxes {
+  width: 100%;
+  height: 2400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#sec2 .photo-boxes .main-box {
+  width: 95%;
+  height: 2400px;
+  display: flex;
+}
+#sec2 .photo-boxes .main-box .gallery1 {
+  width: 50%;
+  height: 2400px;
+}
+#sec2 .photo-boxes .main-box .gallery1 .box1 {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: space-between;
+}
+#sec2 .photo-boxes .main-box .gallery1 .box1 .photo1 {
+  width: 45%;
+  height: 400px;
+  position: relative;
+}
+#sec2 .photo-boxes .main-box .gallery1 .box1 .photo1:hover .divhover {
+  width: 80%;
+  height: 300px;
+  background-color: white;
+  position: absolute;
+  margin-top: 50px;
+  margin-left: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#sec2 .photo-boxes .main-box .gallery1 .box1 .photo2 {
+  width: 45%;
+  height: 400px;
+  position: relative;
+}
+#sec2 .photo-boxes .main-box .gallery1 .box1 .photo2:hover .divhover {
+  width: 80%;
+  height: 300px;
+  background-color: white;
+  position: absolute;
+  margin-top: 50px;
+  margin-left: 30px;
+}
+#sec2 .photo-boxes .main-box .gallery1 .box2 {
+  width: 100%;
+  height: 400px;
+  margin-top: 20px;
+  position: relative;
+}
+#sec2 .photo-boxes .main-box .gallery1 .box2:hover .divhover {
+  width: 90%;
+  height: 300px;
+  background-color: white;
+  position: absolute;
+  margin-top: 50px;
+  margin-left: 30px;
+}
+#sec2 .photo-boxes .main-box .gallery1 .box3 {
+  width: 100%;
+  height: 700px;
+  margin-top: 20px;
+  position: relative;
+}
+#sec2 .photo-boxes .main-box .gallery1 .box3:hover .divhover {
+  width: 90%;
+  height: 600px;
+  background-color: white;
+  position: absolute;
+  margin-top: 50px;
+  margin-left: 30px;
+}
+#sec2 .photo-boxes .main-box .gallery1 .box4 {
+  width: 100%;
+  height: 400px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+#sec2 .photo-boxes .main-box .gallery1 .box4 .photo3 {
+  width: 45%;
+  height: 400px;
+  position: relative;
+}
+#sec2 .photo-boxes .main-box .gallery1 .box4 .photo3:hover .divhover {
+  width: 80%;
+  height: 300px;
+  background-color: white;
+  position: absolute;
+  margin-top: 50px;
+  margin-left: 30px;
+}
+#sec2 .photo-boxes .main-box .gallery1 .box4 .photo4 {
+  width: 45%;
+  height: 400px;
+  position: relative;
+}
+#sec2 .photo-boxes .main-box .gallery1 .box4 .photo4:hover .divhover {
+  width: 80%;
+  height: 300px;
+  background-color: white;
+  position: absolute;
+  margin-top: 50px;
+  margin-left: 30px;
+}
+#sec2 .photo-boxes .main-box .gallery1 .box5 {
+  width: 100%;
+  height: 400px;
+  background-color: yellow;
+  margin-top: 20px;
+  position: relative;
+}
+#sec2 .photo-boxes .main-box .gallery1 .box5:hover .divhover {
+  width: 90%;
+  height: 300px;
+  background-color: white;
+  position: absolute;
+  margin-top: 50px;
+  margin-left: 30px;
+}
+#sec2 .photo-boxes .main-box #linebox {
+  width: 2%;
+  height: 2400px;
+  background-color: white;
+}
+#sec2 .photo-boxes .main-box .gallery2 {
+  width: 50%;
+  height: 2400px;
+}
+#sec2 .photo-boxes .main-box .gallery2 .box6 {
+  width: 100%;
+  height: 820px;
+  position: relative;
+}
+#sec2 .photo-boxes .main-box .gallery2 .box6:hover .divhover {
+  width: 90%;
+  height: 710px;
+  background-color: white;
+  position: absolute;
+  margin-top: 50px;
+  margin-left: 30px;
+}
+#sec2 .photo-boxes .main-box .gallery2 .box7 {
+  width: 100%;
+  height: 700px;
+  margin-top: 20px;
+  position: relative;
+}
+#sec2 .photo-boxes .main-box .gallery2 .box7:hover .divhover {
+  width: 90%;
+  height: 600px;
+  background-color: white;
+  position: absolute;
+  margin-top: 50px;
+  margin-left: 30px;
+}
+#sec2 .photo-boxes .main-box .gallery2 .box8 {
+  width: 100%;
+  height: 810px;
+  background-color: yellow;
+  margin-top: 20px;
+  position: relative;
+}
+#sec2 .photo-boxes .main-box .gallery2 .box8:hover .divhover {
+  width: 90%;
+  height: 710px;
+  background-color: white;
+  position: absolute;
+  margin-top: 50px;
+  margin-left: 30px;
+}
+#sec2 #myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: gray; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 10px; /* Some padding */
+  border-radius: 20px; /* Rounded corners */
+  font-size: 20px; /* Increase font size */
+}
+#sec2 #myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+footer {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .hero-box {
+  width: 80%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+footer .hero-box .socials-links {
+  width: 30%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+footer .hero-box .socials-links .fa-facebook-f {
+  cursor: pointer;
+  color: #6F6F6F;
+  margin-left: 20px;
+  transition: 1s;
+}
+footer .hero-box .socials-links .fa-facebook-f:hover {
+  color: red;
+  transition: 1s;
+}
+footer .hero-box .socials-links .fa-twitter {
+  cursor: pointer;
+  color: #6F6F6F;
+  margin-left: 20px;
+  transition: 1s;
+}
+footer .hero-box .socials-links .fa-twitter:hover {
+  color: red;
+  transition: 1s;
+}
+footer .hero-box .socials-links .fa-google-plus-g {
+  cursor: pointer;
+  color: #6F6F6F;
+  margin-left: 20px;
+  transition: 1s;
+}
+footer .hero-box .socials-links .fa-google-plus-g:hover {
+  color: red;
+  transition: 1s;
+}
+footer .hero-box .socials-links .fa-dribbble {
+  cursor: pointer;
+  color: #6F6F6F;
+  margin-left: 20px;
+  transition: 1s;
+}
+footer .hero-box .socials-links .fa-dribbble:hover {
+  color: red;
+  transition: 1s;
+}
+footer .hero-box .foot-logo {
+  width: 30%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .hero-box .foot-logo .img {
+  width: 70%;
+  height: 50px;
+}
+footer .hero-box .about {
+  width: 30%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .hero-box .about a {
+  text-decoration: none;
+  color: red;
+}/*# sourceMappingURL=style.css.map */
